@@ -1,0 +1,82 @@
+body {
+  background-color: #0a192f;
+  color: #8892b0;
+}
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px; /* Header height */
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stagger-in > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+.glass-card {
+  background: rgba(17, 34, 64, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+/* Backgrounds */
+.home-bg { background-color: #0a192f; }
+.about-bg {
+  background-color: #0a192f;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(100, 255, 218, 0.2) 1px, transparent 0),
+    radial-gradient(circle at 10px 10px, rgba(100, 255, 218, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+  animation: grid-glow 20s linear infinite alternate;
+}
+.skills-bg {
+  background-color: #0a192f;
+  position: relative;
+  background-image: radial-gradient(circle at 1px 1px, rgba(100, 255, 218, 0.2) 1px, transparent 0);
+  background-size: 25px 25px;
+}
+.projects-bg {
+  background-color: #0a192f;
+  background-image: linear-gradient(45deg, #0a192f 0%, #112240 50%, #020c1b 100%);
+  background-size: 200% 200%;
+  animation: nebula-pan 60s ease infinite;
+}
+.experience-bg {
+  background-color: #0a192f;
+  background-image: 
+    linear-gradient(45deg, rgba(100, 255, 218, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(100, 255, 218, 0.05) 25%, transparent 25%);
+  background-size: 50px 50px;
+  animation: grid-glow 30s linear infinite alternate;
+}
+.education-bg {
+  background-color: #0a192f;
+  background-image:
+    linear-gradient(rgba(100, 255, 218, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 255, 218, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+.certifications-bg {
+  background-color: #0a192f;
+  background-image: repeating-linear-gradient(315deg, transparent, transparent 15px, rgba(100, 255, 218, 0.05) 15px, rgba(100, 255, 218, 0.05) 30px);
+}
+.contact-bg {
+  background-color: #0a192f;
+  background-image: radial-gradient(circle at center, rgba(100, 255, 218, 0.1) 0%, transparent 60%);
+}
+
+@keyframes wipe-in-up {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:up"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+}
