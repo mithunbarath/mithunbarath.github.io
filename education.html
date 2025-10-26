@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education | Mithun Barath M R</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              mono: ['Roboto Mono', 'monospace'],
+            },
+            colors: {
+              'dark-bg': '#0a192f',
+              'light-bg': '#112240',
+              'accent': '#64ffda',
+              'slate': {
+                'light': '#ccd6f6',
+                'DEFAULT': '#8892b0',
+                'dark': '#a8b2d1',
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-sans antialiased bg-dark-bg text-slate">
+
+    <div class="flex flex-col min-h-screen">
+       <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 h-20">
+        <div class="container mx-auto px-6 h-full flex justify-between items-center">
+          <a href="./index.html#home" class="text-2xl font-mono font-bold text-accent hover:text-white transition-colors">
+            MB
+          </a>
+  
+          <!-- Desktop Nav -->
+          <nav class="hidden md:flex items-center space-x-8">
+            <a href="./about.html" class="capitalize relative font-mono cursor-pointer transition-colors duration-300 hover:text-accent text-slate-light">
+             <span class="text-accent">01.</span> about
+            </a>
+            <a href="./skills.html" class="capitalize relative font-mono cursor-pointer transition-colors duration-300 hover:text-accent text-slate-light">
+             <span class="text-accent">02.</span> skills
+            </a>
+            <a href="./projects.html" class="capitalize relative font-mono cursor-pointer transition-colors duration-300 hover:text-accent text-slate-light">
+             <span class="text-accent">03.</span> projects
+            </a>
+            <a href="./experience.html" class="capitalize relative font-mono cursor-pointer transition-colors duration-300 hover:text-accent text-slate-light">
+             <span class="text-accent">04.</span> experience
+            </a>
+            <a href="./education.html" class="capitalize relative font-mono cursor-pointer transition-colors duration-300 text-accent">
+             <span class="text-accent">05.</span> education
+            </a>
+            <a href="./certifications.html" class="capitalize relative font-mono cursor-pointer transition-colors duration-300 hover:text-accent text-slate-light">
+             <span class="text-accent">06.</span> certifications
+            </a>
+            <a href="./contact.html" class="capitalize relative font-mono cursor-pointer transition-colors duration-300 hover:text-accent text-slate-light">
+             <span class="text-accent">07.</span> contact
+            </a>
+          </nav>
+  
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden z-50">
+            <div class="space-y-1.5">
+              <span class="block w-7 h-0.5 bg-accent transition-transform duration-300"></span>
+              <span class="block w-7 h-0.5 bg-accent transition-opacity duration-300"></span>
+              <span class="block w-7 h-0.5 bg-accent transition-transform duration-300"></span>
+            </div>
+          </button>
+  
+          <!-- Mobile Nav Menu -->
+          <div id="mobile-menu" class="md:hidden fixed top-0 right-0 w-2/3 max-w-sm h-full bg-light-bg/95 backdrop-blur-lg shadow-xl transition-transform duration-500 ease-in-out transform translate-x-full">
+            <nav class="flex flex-col items-center justify-center h-full space-y-8 pt-20">
+              <a href="./about.html" class="block py-3 text-center capitalize text-lg transition-colors duration-300 font-mono text-slate-light">
+                <span class="block text-accent text-sm">01.</span> about
+              </a>
+              <a href="./skills.html" class="block py-3 text-center capitalize text-lg transition-colors duration-300 font-mono text-slate-light">
+                <span class="block text-accent text-sm">02.</span> skills
+              </a>
+              <a href="./projects.html" class="block py-3 text-center capitalize text-lg transition-colors duration-300 font-mono text-slate-light">
+                <span class="block text-accent text-sm">03.</span> projects
+              </a>
+              <a href="./experience.html" class="block py-3 text-center capitalize text-lg transition-colors duration-300 font-mono text-slate-light">
+                <span class="block text-accent text-sm">04.</span> experience
+              </a>
+              <a href="./education.html" class="block py-3 text-center capitalize text-lg transition-colors duration-300 font-mono text-accent font-bold">
+                <span class="block text-accent text-sm">05.</span> education
+              </a>
+              <a href="./certifications.html" class="block py-3 text-center capitalize text-lg transition-colors duration-300 font-mono text-slate-light">
+                <span class="block text-accent text-sm">06.</span> certifications
+              </a>
+              <a href="./contact.html" class="block py-3 text-center capitalize text-lg transition-colors duration-300 font-mono text-slate-light">
+                <span class="block text-accent text-sm">07.</span> contact
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="flex-grow">
+        <section id="education" class="page-container education-bg" transition-style="in:wipe:up">
+          <div class="container mx-auto px-6 max-w-3xl">
+            <div class="flex items-center gap-4 mb-12 animate-fade-in-up w-full">
+                <h1 class="text-2xl md:text-3xl font-sans font-bold text-slate-light whitespace-nowrap">
+                    <span class="text-accent font-mono text-xl md:text-2xl mr-2">05.</span>
+                    Education
+                </h1>
+                <div class="w-full h-px bg-slate-700/50"></div>
+            </div>
+            <div class="space-y-6">
+              <div class="glass-card p-8 rounded-lg animate-fade-in-up" style="animation-delay: 100ms">
+                  <div class="flex items-start gap-4">
+                      <div class="mt-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-accent"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1.66 4 3 10 0v-5"></path></svg>
+                      </div>
+                      <div>
+                          <h3 class="text-xl font-bold text-slate-light">B.Sc. Computer Science with Data Analytics</h3>
+                          <p class="text-md text-accent font-medium">PSG College of Arts & Science, Coimbatore</p>
+                          <p class="text-slate-light font-mono text-sm mt-1">2022 - 2025</p>
+                          <p class="text-slate mt-2">CGPA: 9.4</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="glass-card p-8 rounded-lg animate-fade-in-up" style="animation-delay: 200ms">
+                  <div class="flex items-start gap-4">
+                      <div class="mt-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-accent"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1.66 4 3 10 0v-5"></path></svg>
+                      </div>
+                      <div>
+                          <h3 class="text-xl font-bold text-slate-light">Higher Secondary Certificate (HSC)</h3>
+                          <p class="text-md text-accent font-medium">Veveaham Matric hr sec school</p>
+                          <p class="text-slate-light font-mono text-sm mt-1">2022</p>
+                          <p class="text-slate mt-2">Percentage: 90.6%</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="glass-card p-8 rounded-lg animate-fade-in-up" style="animation-delay: 300ms">
+                  <div class="flex items-start gap-4">
+                      <div class="mt-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-accent"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1.66 4 3 10 0v-5"></path></svg>
+                      </div>
+                      <div>
+                          <h3 class="text-xl font-bold text-slate-light">Secondary School Leaving Certificate (SSLC)</h3>
+                          <p class="text-md text-accent font-medium">Veveaham Matric hr sec school</p>
+                          <p class="text-slate-light font-mono text-sm mt-1">2020</p>
+                          <p class="text-slate mt-2">Percentage: 92%</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <!-- Floating social links for desktop -->
+        <div class="hidden md:flex flex-col items-center fixed bottom-0 left-12 z-10">
+            <div class="flex flex-col items-center gap-6">
+                <a href="https://www.github.com/mithunbarath" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-accent transform hover:-translate-y-1 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mithunbarathmr13/" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-accent transform hover:-translate-y-1 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <div class="w-px h-24 bg-slate mt-6"></div>
+        </div>
+        
+        <div class="py-6 text-center">
+          <div class="md:hidden flex justify-center space-x-6 mb-4">
+              <a href="https://www.github.com/mithunbarath" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mithunbarathmr13/" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+          </div>
+          <a href="https://github.com/mithunbarath" target="_blank" rel="noopener noreferrer" class="font-mono text-sm text-slate hover:text-accent transition-colors duration-300">
+            Designed & Built by Mithun Barath M R
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
