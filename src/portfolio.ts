@@ -29,7 +29,7 @@ export const portfolio = {
     email: "barathmithun1548@gmail.com",
     phone: "+91-8428379930",
     github: "https://github.com/mithunbarath",
-    linkedin: "https://linkedin.com/in/mithunbarath13",
+    linkedin: "https://www.linkedin.com/in/mithunbarathmr13/",
     resumeLink: "",
   },
 
