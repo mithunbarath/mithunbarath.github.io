@@ -367,7 +367,7 @@ export const portfolio = {
     location: "Bengaluru, India",
     socials: [
       { name: "GitHub", url: "https://github.com/mithunbarath", handle: "@mithunbarath" },
-      { name: "LinkedIn", url: "https://linkedin.com/in/mithunbarath13", handle: "in/mithunbarath13" },
+      { name: "LinkedIn", url: "https://www.linkedin.com/in/mithunbarathmr13/", handle: "in/mithunbarath13" },
       { name: "Email", url: "mailto:barathmithun1548@gmail.com", handle: "barathmithun1548@gmail.com" },
     ],
   },
